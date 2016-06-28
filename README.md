@@ -1,4 +1,4 @@
-#Udacity Student AB Test Project
+#Udacity Student A/B Test Project
 
 ##Experiment Design
 
@@ -45,7 +45,7 @@ I chose to divert 50% of traffic because I thought this experiment is a relative
 
 ##Experiment Analysis
 
-The data for each group I used to calculate the information below can be found in this [Google spreadsheet](https://docs.google.com/spreadsheets/d/1Mu5u9GrybDdska-ljPXyBjTpdZIUev_6i7t4LRDfXM8/edit#gid=0). 
+The data for each group I used to calculate the information below can be found in this [Google spreadsheet](https://docs.google.com/spreadsheets/d/1Mu5u9GrybDdska-ljPXyBjTpdZIUev_6i7t4LRDfXM8/edit#gid=0).
 
 ###Sanity Checks
 
