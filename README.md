@@ -4,28 +4,29 @@
 
 ###Metric Choice
 
-  **Invariant Metrics:** number of cookies, number of clicks, click-through-probability, evaluation Metrics, gross conversion, net conversion
+**Invariant Metrics:** number of cookies, number of clicks, click-through-probability, evaluation Metrics, gross conversion, net conversion
 
-  **Evaluation Metrics:** gross conversion, net conversion
+**Evaluation Metrics:** gross conversion, net conversion
 
-  ####Invariant Metrics
+####Invariant Metrics
 
-  **Number of cookies:** This metric is the number of cookies expected to view the course overview page. This metric is a strong invariant metric and a weak evaluation metric because it measures how many cookies get to the course overview page before the experiment is presented to them. I would expect this metric to be equally distributed between control and experiment groups and not have an effect on the experiment itself.  
+**Number of cookies:** This metric is the number of cookies expected to view the course overview page. This metric is a strong invariant metric and a weak evaluation metric because it measures how many cookies get to the course overview page before the experiment is presented to them. I would expect this metric to be equally distributed between control and experiment groups and not have an effect on the experiment itself.  
 
-  **Number of clicks**: This metric is the number of users that click the “Start Free-Trial” button, which happens before the experiment window is shown to the user. Since this metric is tracked before the experiment actually occurs, so it should not be used as an evaluation metric. I would expect the experiment and control groups to be equally distributed and not affect the experiment itself because the experience is the same for all users.
+**Number of clicks**: This metric is the number of users that click the “Start Free-Trial” button, which happens before the experiment window is shown to the user. Since this metric is tracked before the experiment actually occurs, so it should not be used as an evaluation metric. I would expect the experiment and control groups to be equally distributed and not affect the experiment itself because the experience is the same for all users.
 
-  **Click-through-probability:** This metric is defined by dividing the number of unique cookies that click the “Start Free-Trial” page by the number of unique cookies that view the course overview page. This is a good invariant metric because it is defined when the experience should be the same for all users and not affect the experiment. I would also expect this metric to be evenly distributed between control and experiment groups.
+**Click-through-probability:** This metric is defined by dividing the number of unique cookies that click the “Start Free-Trial” page by the number of unique cookies that view the course overview page. This is a good invariant metric because it is defined when the experience should be the same for all users and not affect the experiment. I would also expect this metric to be evenly distributed between control and experiment groups.
 
-  ####Evaluation Metrics
+####Evaluation Metrics
 
-  **Gross conversion**: This metric is defined by the number of user-ids that checkout and enroll in in the free trial divided by the number of unique cookies that click the “Start Free-Trial” button. Since this metric is measured after users have seen the experiment, it is directly affected by it, which makes it a strong evaluation metric and vice versa as an invariant metric. I would not expect the control and experiment groups for this metric to be evenly distributed.
+**Gross conversion**: This metric is defined by the number of user-ids that checkout and enroll in in the free trial divided by the number of unique cookies that click the “Start Free-Trial” button. Since this metric is measured after users have seen the experiment, it is directly affected by it, which makes it a strong evaluation metric and vice versa as an invariant metric. I would not expect the control and experiment groups for this metric to be evenly distributed.
 
-  **Net conversion**: This metric is defined by the number of user-ids that remained enrolled after the 14-day free-trial period divided by the number of cookies that click the “Start Free-Trial” button. Since this metric is correlated to the impact of the experiment being run, it is a strong evaluation metric, and a weak invariant metric, since it will most likely change based on the experiment. I would not expect either the control and experiment groups to be evenly distributed for this metric either.
+**Net conversion**: This metric is defined by the number of user-ids that remained enrolled after the 14-day free-trial period divided by the number of cookies that click the “Start Free-Trial” button. Since this metric is correlated to the impact of the experiment being run, it is a strong evaluation metric, and a weak invariant metric, since it will most likely change based on the experiment. I would not expect either the control and experiment groups to be evenly distributed for this metric either.
 
 ###Measuring Standard Deviation
 
+  | Metric | Standard Deviation |
+  | ------ | ------------------ |
   | Gross conversion: | .0202 |
-
   | Net conversion: | .0156 |
 
   I expect the analytic and empirical variability to be similar for both of the evaluation metrics I chose. This is because analytical and empirical variability tend to be similar when the unit of diversion is the same as the unit of analysis. Both evaluation metrics I used have unique cookies as their unit of diversion and unit of analysis, thus their empirical and analytical variability should be similar.
