@@ -8,7 +8,7 @@
    * number of cookies, number of clicks, click-through-probability, evaluation Metrics, gross conversion, net conversion
 
   **Evaluation Metrics:**
-    * gross conversion, net conversion
+  * gross conversion, net conversion
 
   ####Invariant Metrics
 
@@ -71,7 +71,7 @@ I chose to divert 50% of traffic because I thought this experiment is a relative
 
 I did not use the Bonferroni correction in my analysis. The reason for this is because I thought my evaluation metrics would be correlated with one another, and the Bonferroni correction would be too conservative and possibly lead to not launching the experiment.
 
-###Recommendation
+####Recommendation
 
 Based on my findings, I would not recommend launching this experiment to all users and to run another experiment to gather more information on student’s frustration with the free trial program. When choosing metrics, I decided that both evaluation metrics would need to be both practically and statistically significant in order to launch the experiment. Net conversion was not statistically nor practically significant, thus we cannot reject the null hypothesis for that particular metric and not move forward with the experiment.
 
@@ -94,7 +94,11 @@ Post-enrollment, I also think there could be a possibility to help users. Udacit
 The post-enrollment experiment would be setup as follows.
 
 **Design:** Users are either filtered into the experiment group, which completes the can talk to other students in chat rooms or the control group which works through the free-trial normally.
+
 **Null Hypothesis:** The student collaboration functionality will not increase the number of students that continue on past the free-trial period by the statistical significant amount defined.
+
 **Unit of Diversion:** The unit of diversion for this test would be user-id since the experiment occurs after the user already enrolls and has created an account.
+
 **Invariant Metrics:** User-id would be the invariant metric because one could expect users to be equally divided between control and experiment groups.
+
 **Evaluation Metrics:** Retention would be the evaluation metric because it measures what percentage of users stay enrolled past the free-trial period.
