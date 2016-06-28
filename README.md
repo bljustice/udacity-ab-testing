@@ -24,6 +24,8 @@
 
 ###Measuring Standard Deviation
 
+The baseline metrics I used for calculating the standard deviations below can be found in this [Google spreadsheet](https://docs.google.com/spreadsheets/d/1MYNUtC47Pg8hdoCjOXaHqF-thheGpUshrFA21BAJnNc/edit#gid=0).
+
 | Metric | Standard Deviation |
 | ------ | ------------------ |
 | Gross conversion: | .0202 |
@@ -42,6 +44,8 @@ I chose to divert 50% of Udacity’s traffic for this experiment, which would re
 I chose to divert 50% of traffic because I thought this experiment is a relatively low risk for Udacity. From a high-level, the experiment only adds a small step in between users clicking on the “Start Free-Trial” button and actually starting their free-trial. However, to be safe I decided to only divert half of the site’s traffic into the experiment instead of all traffic in case something were to go wrong, such as experiment bugs. This only increased the duration of the experiment by about 2.5 weeks, which I thought was justifiable to avoid any possible flaws with the experiment.
 
 ##Experiment Analysis
+
+The data for each group I used to calculate the information below can be found in this [Google spreadsheet](https://docs.google.com/spreadsheets/d/1Mu5u9GrybDdska-ljPXyBjTpdZIUev_6i7t4LRDfXM8/edit#gid=0). 
 
 ###Sanity Checks
 
