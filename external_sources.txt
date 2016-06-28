@@ -1,0 +1,3 @@
+Below is a list of external sources I used for this project.
+
+http://www.evanmiller.org/ab-testing/sample-size.html
