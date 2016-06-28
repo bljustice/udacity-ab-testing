@@ -4,11 +4,9 @@
 
 ###Metric Choice
 
-  **Invariant Metrics:**
-   * number of cookies, number of clicks, click-through-probability, evaluation Metrics, gross conversion, net conversion
+  **Invariant Metrics:** number of cookies, number of clicks, click-through-probability, evaluation Metrics, gross conversion, net conversion
 
-  **Evaluation Metrics:**
-  * gross conversion, net conversion
+  **Evaluation Metrics:** gross conversion, net conversion
 
   ####Invariant Metrics
 
@@ -26,8 +24,9 @@
 
 ###Measuring Standard Deviation
 
-  Gross conversion: .0202
-  Net conversion: .0156
+  | Gross conversion: | .0202 |
+
+  | Net conversion: | .0156 |
 
   I expect the analytic and empirical variability to be similar for both of the evaluation metrics I chose. This is because analytical and empirical variability tend to be similar when the unit of diversion is the same as the unit of analysis. Both evaluation metrics I used have unique cookies as their unit of diversion and unit of analysis, thus their empirical and analytical variability should be similar.
 
