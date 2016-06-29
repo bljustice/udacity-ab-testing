@@ -18,7 +18,7 @@
 
 ####Evaluation Metrics
 
-**Gross conversion**: This metric is defined by the number of user-ids that checkout and enroll in in the free trial divided by the number of unique cookies that click the “Start Free-Trial” button. Since this metric is measured after users have seen the experiment, it is directly affected by it, which makes it a strong evaluation metric and vice versa as an invariant metric. I would not expect the control and experiment groups for this metric to be evenly distributed.
+**Gross conversion**: This metric is defined by the number of user-ids that checkout and enroll in the free trial divided by the number of unique cookies that click the “Start Free-Trial” button. Since this metric is measured after users have seen the experiment, it is directly affected by it, which makes it a strong evaluation metric and vice versa as an invariant metric. I would not expect the control and experiment groups for this metric to be evenly distributed.
 
 **Net conversion**: This metric is defined by the number of user-ids that remained enrolled after the 14-day free-trial period divided by the number of cookies that click the “Start Free-Trial” button. Since this metric is correlated to the impact of the experiment being run, it is a strong evaluation metric, and a weak invariant metric, since it will most likely change based on the experiment. I would not expect either the control and experiment groups to be evenly distributed for this metric either.
 
@@ -87,11 +87,15 @@ Pre-enrollment, I feel that additional questions should be asked about a person�
 
 The pre-enrollment experiment would be setup as follows with the following metrics.
 
-Design: Users are either filtered into the experiment group, which completes the pre-requisites. The other group is not filtered and enrolls in the free-trial normally.
-Null Hypothesis: The additional pre-requisite measures will not increase the number of students that continue on past the free-trial period by the statistically significant difference defined.
-Unit of Diversion: Similarly to how the original experiment was set up, the unit of diversion would be a unique cookie, and then user-id after a user enrolls in the free-trial period.
-Invariant Metrics: These would be the same as the original experiment.
-Evaluation Metrics: These would also be the same as the original experiment.
+**Design:** Users are either filtered into the experiment group, which completes the pre-requisites. The other group is not filtered and enrolls in the free-trial normally.
+
+**Null Hypothesis:** The additional pre-requisite measures will not increase the number of students that continue on past the free-trial period by the statistically significant difference defined.
+
+**Unit of Diversion:** Similarly to how the original experiment was set up, the unit of diversion would be a unique cookie, and then user-id after a user enrolls in the free-trial period.
+
+**Invariant Metrics:** These would be the same as the original experiment.
+
+**Evaluation Metrics:** These would also be the same as the original experiment.
 
 Post-enrollment, I also think there could be a possibility to help users. Udacity offers 1 on 1 coaching meetings, however meeting with students in the same fashion could also be beneficial. If a user is feeling frustrated or stuck on a particular problem during their free-trial period, they could jump into a conversation with multiple other students that may be experiencing the same thing to help address the issue they’re working through. This may help students that don’t feel comfortable talking to coaches at first, but also gives them someone that’s comparable to them to talk with, which could also increase cross-student communication and engagement.
 
