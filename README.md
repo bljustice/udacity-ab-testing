@@ -87,7 +87,7 @@ Pre-enrollment, I feel that additional questions should be asked about a person�
 
 The pre-enrollment experiment would be setup as follows with the following metrics.
 
-**Design:** Users are either filtered into the experiment group, which completes the pre-requisites. The other group is not filtered and enrolls in the free-trial normally.
+**Design:** Users are either diverted into the experiment group, which completes the pre-requisites, or the control group, which is not filtered and enrolls in the free-trial normally.
 
 **Null Hypothesis:** The additional pre-requisite measures will not increase the number of students that continue on past the free-trial period by the statistically significant difference defined.
 
@@ -97,13 +97,13 @@ The pre-enrollment experiment would be setup as follows with the following metri
 
 **Evaluation Metrics:** These would also be the same as the original experiment.
 
-Post-enrollment, I also think there could be a possibility to help users. Udacity offers 1 on 1 coaching meetings, however meeting with students in the same fashion could also be beneficial. If a user is feeling frustrated or stuck on a particular problem during their free-trial period, they could jump into a conversation with multiple other students that may be experiencing the same thing to help address the issue they’re working through. This may help students that don’t feel comfortable talking to coaches at first, but also gives them someone that’s comparable to them to talk with, which could also increase cross-student communication and engagement.
+Post-enrollment, I think there could be a possibility to help users also. Udacity offers 1 on 1 coaching meetings, however meeting with students in the same fashion could be beneficial. If a user is feeling frustrated or stuck on a particular problem during their free-trial period, they could jump into a conversation with multiple other students that may be experiencing the same problem, and help one another through it. This may help students that don’t feel comfortable talking to coaches at first, but also gives them someone that’s comparable to them to talk with, which could also increase cross-student communication and engagement.
 
 The post-enrollment experiment would be setup as follows.
 
-**Design:** Users are either filtered into the experiment group, which completes the can talk to other students in chat rooms or the control group which works through the free-trial normally.
+**Design:** Users are either diverted into the experiment group, which has the ability to communicate interactively with other students or the control group, which works through the free-trial normally.
 
-**Null Hypothesis:** The student collaboration functionality will not increase the number of students that continue on past the free-trial period by the statistical significant amount defined.
+**Null Hypothesis:** The student collaboration functionality will not increase the number of students that continue on past the free-trial period by the statistically significant difference defined.
 
 **Unit of Diversion:** The unit of diversion for this test would be user-id since the experiment occurs after the user already enrolls and has created an account.
 
