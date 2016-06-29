@@ -22,9 +22,11 @@
 
 **Gross conversion:** This metric is defined by the number of user-ids that checkout and enroll in the free trial divided by the number of unique cookies that click the “Start Free-Trial” button. Since this metric is measured after users have seen the experiment, it is directly affected by it, which makes it a strong evaluation metric and vice versa as an invariant metric. I would not expect the control and experiment groups for this metric to be evenly distributed.
 
-**Retention:** This metric is defined as the number of user-ids that stay enrolled passed the free-trial period divided by the number of cookies that clicked on the "Start Free-Trial" button. This is not a strong invariant metric since it is dependent on the experiment. It is a strong evaluation metric, however based on the experiment duration needed for this metric, I decided not to use it. I calculated that I would need to run the experiment for 119 days to match the amount of pageviews required for this metric (4,741,213 pageviews). 
+**Retention:** This metric is defined as the number of user-ids that stay enrolled passed the free-trial period divided by the number of cookies that clicked on the "Start Free-Trial" button. This is not a strong invariant metric since it is dependent on the experiment. It is a strong evaluation metric, however based on the experiment duration needed for this metric, I decided not to use it. I calculated that I would need to run the experiment for 119 days to match the amount of pageviews required for this metric (4,741,213 pageviews).
 
 **Net conversion:** This metric is defined by the number of user-ids that remained enrolled after the 14-day free-trial period divided by the number of cookies that click the “Start Free-Trial” button. Since this metric is correlated to the impact of the experiment being run, it is a strong evaluation metric, and a weak invariant metric, since it will most likely change based on the experiment. I would not expect either the control and experiment groups to be evenly distributed for this metric either.
+
+To justify launching the experiment, both gross conversion will need to decrease and net conversion will need to increase. This will show that the number of users signing up for the free-trial is decreasing, but the number of users continuing past the free-trial increases.
 
 ###Measuring Standard Deviation
 
@@ -43,9 +45,9 @@ I expect the analytic and empirical variability to be similar for both of the ev
 I did not use the Bonferroni correction during my analysis phase. The number of pageviews needed for my experiment is 685,325.
 
 ####Duration vs. Exposure
-I chose to divert 50% of Udacity’s traffic for this experiment, which would require a 35 day duration for the experiment.
+I chose to divert 85% of Udacity’s traffic for this experiment, which would require a 21 day duration for the experiment.
 
-I chose to divert 50% of traffic because I thought this experiment is a relatively low risk for Udacity. From a high-level, the experiment only adds a small step in between users clicking on the “Start Free-Trial” button and actually starting their free-trial. However, to be safe I decided to only divert half of the site’s traffic into the experiment instead of all traffic in case something were to go wrong, such as experiment bugs. This only increased the duration of the experiment by about 2.5 weeks, which I thought was justifiable to avoid any possible flaws with the experiment.
+I chose to divert 85% of traffic because I thought this experiment is a relatively low risk for Udacity. From a high-level, the experiment only adds a small step in between users clicking on the “Start Free-Trial” button and actually starting their free-trial. However, to be safe I decided leave a small portion of the site’s traffic out of the experiment in case something were to go wrong, such as experiment bugs. This only increased the duration of the experiment by about 3 days, which I thought was justifiable.
 
 ##Experiment Analysis
 
@@ -77,7 +79,10 @@ The data for each group I used to calculate the information below can be found i
 
 ####Summary
 
-I did not use the Bonferroni correction in my analysis. The reason for this is because I thought my evaluation metrics would be correlated with one another, and the Bonferroni correction would be too conservative and possibly lead to not launching the experiment.
+I did not use the Bonferroni correction in my analysis for the following reasons.
+
+  1. I thought my evaluation metrics would be correlated with one another, and the Bonferroni correction would be too conservative and possibly lead to not launching the experiment.
+  2. Since all of my evaluation metrics must be satisfied to launch, the experiment is more prone to decisions based on false negative results. The Bonferroni correction is used to control false positives when using multiple metrics, which means the experiment results could be more prone to false negative results. Thus, it did not make sense to use this correction for this experiment. 
 
 ####Recommendation
 
