@@ -82,7 +82,7 @@ The data for each group I used to calculate the information below can be found i
 I did not use the Bonferroni correction in my analysis for the following reasons.
 
   1. I thought my evaluation metrics would be correlated with one another, and the Bonferroni correction would be too conservative and possibly lead to not launching the experiment.
-  2. Since all of my evaluation metrics must be satisfied to launch, the experiment is more prone to decisions based on false negative results. The Bonferroni correction is used to control false positives when using multiple metrics, which means the experiment results could be more prone to false negative results. Thus, it did not make sense to use this correction for this experiment.
+  2. Since all of my evaluation metrics must be satisfied to launch, launching the experiment is more prone to decisions based on false negative results. The Bonferroni correction is used to control false positives when using multiple metrics, which means the experiment results could be more prone to false negative results. Since the experiment is prone to false negative errors, it did not make sense to use this correction.
 
 ####Recommendation
 
