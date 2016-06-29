@@ -86,7 +86,7 @@ I did not use the Bonferroni correction in my analysis for the following reasons
 
 ####Recommendation
 
-Based on my findings, I would not recommend launching this experiment to all users and to run another experiment to gather more information on student’s frustration with the free trial program. When choosing metrics, I decided that both evaluation metrics would need to be both practically and statistically significant in order to launch the experiment. Net conversion was not statistically nor practically significant, thus we cannot reject the null hypothesis for that particular metric and not move forward with the experiment.
+Since the requirements to launch this experiment were for both evaluation metrics being satisfied, I cannot recommend launching it. Gross conversion saw a statistically and practically significant decrease, but net conversion did not see a significant difference in either. I recommend running another experiment to gather more information on student’s frustration with the free trial program.
 
 ##Follow-Up Experiment
 
