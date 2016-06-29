@@ -10,17 +10,21 @@
 
 ####Invariant Metrics
 
-**Number of cookies:** This metric is the number of cookies expected to view the course overview page. This metric is a strong invariant metric and a weak evaluation metric because it measures how many cookies get to the course overview page before the experiment is presented to them. I would expect this metric to be equally distributed between control and experiment groups and not have an effect on the experiment itself.  
+**Number of cookies:** This metric is the number of cookies expected to view the course overview page. This metric is a strong invariant metric and a weak evaluation metric because it measures how many cookies get to the course overview page before the experiment is presented to them. I would expect this metric to be equally distributed between control and experiment groups and not have an effect on the experiment itself.
 
-**Number of clicks**: This metric is the number of users that click the “Start Free-Trial” button, which happens before the experiment window is shown to the user. Since this metric is tracked before the experiment actually occurs, so it should not be used as an evaluation metric. I would expect the experiment and control groups to be equally distributed and not affect the experiment itself because the experience is the same for all users.
+**Number of user-ids:** This metric is the number of users who enroll in the free-trial. This is not a good invariant metric because it is dependent on the experiment. It is also not a strong evaluation metric because the metric amount could be different between control and experiment groups, which would then skew the results of the experiment one way or the other.  
+
+**Number of clicks:** This metric is the number of users that click the “Start Free-Trial” button, which happens before the experiment window is shown to the user. Since this metric is tracked before the experiment actually occurs, so it should not be used as an evaluation metric. I would expect the experiment and control groups to be equally distributed and not affect the experiment itself because the experience is the same for all users.
 
 **Click-through-probability:** This metric is defined by dividing the number of unique cookies that click the “Start Free-Trial” page by the number of unique cookies that view the course overview page. This is a good invariant metric because it is defined when the experience should be the same for all users and not affect the experiment. I would also expect this metric to be evenly distributed between control and experiment groups.
 
 ####Evaluation Metrics
 
-**Gross conversion**: This metric is defined by the number of user-ids that checkout and enroll in the free trial divided by the number of unique cookies that click the “Start Free-Trial” button. Since this metric is measured after users have seen the experiment, it is directly affected by it, which makes it a strong evaluation metric and vice versa as an invariant metric. I would not expect the control and experiment groups for this metric to be evenly distributed.
+**Gross conversion:** This metric is defined by the number of user-ids that checkout and enroll in the free trial divided by the number of unique cookies that click the “Start Free-Trial” button. Since this metric is measured after users have seen the experiment, it is directly affected by it, which makes it a strong evaluation metric and vice versa as an invariant metric. I would not expect the control and experiment groups for this metric to be evenly distributed.
 
-**Net conversion**: This metric is defined by the number of user-ids that remained enrolled after the 14-day free-trial period divided by the number of cookies that click the “Start Free-Trial” button. Since this metric is correlated to the impact of the experiment being run, it is a strong evaluation metric, and a weak invariant metric, since it will most likely change based on the experiment. I would not expect either the control and experiment groups to be evenly distributed for this metric either.
+**Retention:** This metric is defined as the number of user-ids that stay enrolled passed the free-trial period divided by the number of cookies that clicked on the "Start Free-Trial" button. This is not a strong invariant metric since it is dependent on the experiment. It is a strong evaluation metric, however based on the experiment duration needed for this metric, I decided not to use it. I calculated that I would need to run the experiment for 119 days to match the amount of pageviews required for this metric (4741213 pageviews). 
+
+**Net conversion:** This metric is defined by the number of user-ids that remained enrolled after the 14-day free-trial period divided by the number of cookies that click the “Start Free-Trial” button. Since this metric is correlated to the impact of the experiment being run, it is a strong evaluation metric, and a weak invariant metric, since it will most likely change based on the experiment. I would not expect either the control and experiment groups to be evenly distributed for this metric either.
 
 ###Measuring Standard Deviation
 
