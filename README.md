@@ -26,7 +26,7 @@
 
 **Net conversion:** This metric is defined by the number of user-ids that remained enrolled after the 14-day free-trial period divided by the number of cookies that click the “Start Free-Trial” button. Since this metric is correlated to the impact of the experiment being run, it is a strong evaluation metric, and a weak invariant metric, since it will most likely change based on the experiment. I would not expect either the control and experiment groups to be evenly distributed for this metric either.
 
-To justify launching the experiment, both gross conversion and net conversion will need to be satisfied. Gross conversion will need to decrease and net conversion will need to increase. This will show that the number of users signing up for the free-trial is decreasing, but the number of users continuing past the free-trial increases.
+To justify launching the experiment, both gross conversion and net conversion will need to be satisfied. Gross conversion will need to decrease and net conversion will need to not decrease. This will show that the number of users signing up for the free-trial is decreasing, but overall revenue is not negatively impacted by the experiment.
 
 ###Measuring Standard Deviation
 
@@ -86,7 +86,7 @@ I did not use the Bonferroni correction in my analysis for the following reasons
 
 ####Recommendation
 
-Since the requirements to launch this experiment were for both evaluation metrics being satisfied, I cannot recommend launching it. Gross conversion saw a statistically and practically significant decrease, but net conversion did not see a significant difference in either. I recommend running another experiment to gather more information on student’s frustration with the free trial program.
+Since the requirements to launch this experiment were for both evaluation metrics being satisfied, I cannot recommend launching it. Gross conversion saw a statistically and practically significant decrease, but net conversion did not see a significant difference in either. Since the negative of the net conversion practical significance boundary falls within the metric's confidence interval, it's possible that revenue could be negatively impacted and therefore is not satisfied. I recommend running another experiment to gather more information on student’s frustration with the free trial program.
 
 ##Follow-Up Experiment
 
